@@ -1,3 +1,5 @@
+import re
+
 from Models.model import queryModel, audioModel
 import math
 
@@ -28,8 +30,26 @@ def semantic_search_audio(query_data, audio_data):
         
         if distance < 0.2:  # Threshold for matching
             return segment
-
+        
+def phone_to_text(phonemes: list[str], LanguageDictionary: list[str]) -> str:
+    '''
+    It searches the phoneme in th dictionary and returns the corresponding text. If the phoneme is not found, it returns an empty string.
+    '''
     
+    Words = []
+    
+    for v in range(len(phonemes)):
+        if phonemes[v] in LanguageDictionary:
+            Words.append(LanguageDictionary[phonemes[v]])
+        else:
+            pattern  = re.compile(f'[{phonemes[v]}]+')
+            pattern_match = re.findall(pattern, LanguageDictionary)
+            for match in pattern_match:
+                if match in LanguageDictionary:
+                    Words.append(LanguageDictionary[match])
+                    break
+    return ' '.join(Words)
+
 def distance_metric(audio1, audio2):
     pitch1, frequency1 = audio1
     pitch2, frequency2 = audio2
