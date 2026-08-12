@@ -1,7 +1,7 @@
 from Models.model import queryModel, audioModel
 import math
 
-def audio_retrieval(query: audioModel, audio_data: list[tuple[float, float]], mapping: dict[str:list[float, float]]):
+def audio_retrieval(query: audioModel, audio_data: list[tuple[float, float]], mapping: dict[str:list[list[float, float]]]):
     """
     Retrieves audio data from the query.
     
@@ -61,7 +61,7 @@ def convert_to_phonemes(audio_data):
         phonemes.append(phoneme)
     return phonemes
 
-def map_to_phonemes(lst: list[list[list[float, float]]], mapping: dict[str:list[float, float]]) -> str:
+def map_to_phonemes(lst: list[list[list[float, float]]], mapping: dict[str:list[list[float, float]]]) -> str:
     """
     Maps phonemes to their corresponding representations.
     
@@ -76,12 +76,8 @@ def map_to_phonemes(lst: list[list[list[float, float]]], mapping: dict[str:list[
     broken_list = [lst[i:i + 3] for i in range(0, len(lst), 3)]
     
     for lst1 in broken_list:
-        for phone in lst1:
-            pitch = math.mean([pitch for pitch, _ in phone])
-            freq = math.mean([freq for _, freq in phone])
-            
-            for key, val in mapping.items():
-                if math.isclose(pitch, val[0], rel_tol=0.1) and math.isclose(freq, val[1], rel_tol=0.1):
-                    mapped_phonemes.append(key)
-                    break
+        for key, val in mapping.items():
+            if lst1 == val:
+                mapped_phonemes.append(key)
+                break
     return mapped_phonemes
