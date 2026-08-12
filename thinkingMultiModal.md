@@ -1,4 +1,4 @@
-There are the modes combinedly with which human uses to come up with thoughts.
+There are the modes combinedly with which human uses to come up with thoughts. \
 1) Hearing (Ear)
 2) Seeing (Eye)
 3) Feeling Physical
@@ -27,3 +27,9 @@ Multimodal Retrieval:
 (Ear + Eye + Feelings + Thinking)
 
 Eye --> Consciousness Invocation (Brain) --> Relevance mining + Visualization of Relevance + Feelings --> A detour into visualization --> Invocation of Ear --> Thought --> Acceptance, Doubt, Negation --> Further Observation with eye + ear --> Invocation of consciousness --> Repeat Until Certain or Not Questioned rendering Questionability from outside Source. 
+
+\============================================================================================================\
+Vision Mode: \
+
+Eye --> Consciousness Invocation --> Pixel wide view --> Patching to form small units --> Repatching --> Form Edges and Corners --> Form Entire Object --> Keep it in Cache --> Semantic Mapping for Relevance --> Recognition or Redo (With Invocation of Other Sense INVOKE(SENSE(S))) --> Collated Collective Validation --> Final Text / Caption with Object(s) Recognition
+
