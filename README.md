@@ -47,3 +47,7 @@ Meta Learning is the branch of AGI wherein the model learns to learn. It learns 
 be called meta-learning. In that scenario, all you would have been given was data to distinguish beween red and green based on features of red and green colors say R, G, B channel values and any additional features along with an instant perception received from visual system.
 Based on this, the model should have been able to figure out training for T1 task from R,G,B data and then T2 task based on small one instant data received from visual senses and perception - which is instantaneous data.
 This ability to orchestrate this entire learning process from some receievd data so that task T2 can be accomplished instantly is called Meta-Learning. This initial discussion will help us build dummy AGI systems in Python.
+
+This repository is an intellectual property of Technocraft AI, a parent of AItomation Pvt Ltd. Use of this data is strictly prohibited, can be sued in International Courts of respective countries, financially as well as otherwise.
+
+**&copy; AItomation Pvt Ltd 2026**
