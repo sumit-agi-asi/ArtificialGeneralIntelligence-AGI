@@ -33,4 +33,4 @@ Vision Mode: \
 
 Eye --> Consciousness Invocation --> Pixel wide view --> Patching to form small units --> Repatching --> Form Edges and Corners --> Form Entire Object --> Keep it in Cache --> Semantic Mapping for Relevance --> Recognition or Redo (With Invocation of Other Sense INVOKE(SENSE(S))) --> Collated Collective Validation --> Final Text / Caption with Object(s) Recognition
 
-&copy; AItomation Pvt Ltd
+&copy; AItomation Pvt Ltd 2026
